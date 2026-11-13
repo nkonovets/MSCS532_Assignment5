@@ -41,11 +41,3 @@ def quicksort_random(data, start, end): #quicksort function recursively calling 
         quicksort_random(data, part + 1, end)
 
 
-numbers = [5, 1, 8, 4, 9, 6, 4, 2, 3]
-
-test1 = numbers.copy()
-quicksort_deterministic(test1, 0, len(test1) - 1)
-print(test1)
-test2 = numbers.copy()
-quicksort_random(test2, 0, len(test2) - 1)
-print(test2)

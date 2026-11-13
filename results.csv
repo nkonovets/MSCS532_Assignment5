@@ -1,0 +1,2 @@
+algorithm,file,n,time_ms,peak_memory_kb
+Quick Sort Deterministic,data/random_large.txt,50000,37.85,0.0
