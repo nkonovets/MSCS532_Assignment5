@@ -29,8 +29,7 @@ def memory_recorder(sort_algorithm, data):
 
 def save_results(algorithm_name, sort_algorithm, data, filename):
 
-    ms = time_recorder(sort_algorithm, data)
-    kb = memory_recorder(sort_algorithm, data)
+    ms = time_recorder(sort_algorithm, data)             #memory is not measured here, tracemalloc was too slow on the worst case
 
     new_file = not os.path.exists("results.csv")         #check if results.csv already exists
 
@@ -39,8 +38,8 @@ def save_results(algorithm_name, sort_algorithm, data, filename):
         writer = csv.writer(f)
 
         if new_file:
-            writer.writerow(["algorithm", "file", "n", "time_ms", "peak_memory_kb"])
+            writer.writerow(["algorithm", "file", "n", "time_ms"])
 
-        writer.writerow([algorithm_name, filename, len(data), round(ms, 2), round(kb, 1)])
+        writer.writerow([algorithm_name, filename, len(data), round(ms, 2)])
 
-    print(f"{algorithm_name}  {filename}  n={len(data)}  {ms:.2f} ms  {kb:.1f} KB")
+    print(f"{algorithm_name}  {filename}  n={len(data)}  {ms:.2f} ms")

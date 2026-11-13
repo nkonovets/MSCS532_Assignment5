@@ -1,2 +1,19 @@
-algorithm,file,n,time_ms,peak_memory_kb
-Quick Sort Deterministic,data/random_large.txt,50000,37.85,0.0
+algorithm,file,n,time_ms
+Quick Sort Random,data/random_small.txt,1000,0.64
+Quick Sort Random,data/random_mid.txt,10000,8.04
+Quick Sort Random,data/random_large.txt,50000,50.73
+Quick Sort Random,data/sorted_small.txt,1000,0.59
+Quick Sort Random,data/sorted_mid.txt,10000,7.99
+Quick Sort Random,data/sorted_large.txt,50000,52.83
+Quick Sort Random,data/reverse_small.txt,1000,0.62
+Quick Sort Random,data/reverse_mid.txt,10000,7.9
+Quick Sort Random,data/reverse_large.txt,50000,56.07
+Quick Sort Deterministic,data/random_small.txt,1000,0.64
+Quick Sort Deterministic,data/random_mid.txt,10000,7.11
+Quick Sort Deterministic,data/random_large.txt,50000,39.11
+Quick Sort Deterministic,data/sorted_small.txt,1000,19.78
+Quick Sort Deterministic,data/sorted_mid.txt,10000,2019.37
+Quick Sort Deterministic,data/sorted_large.txt,50000,59039.15
+Quick Sort Deterministic,data/reverse_small.txt,1000,17.32
+Quick Sort Deterministic,data/reverse_mid.txt,10000,1568.13
+Quick Sort Deterministic,data/reverse_large.txt,50000,45338.28
